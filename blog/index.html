@@ -7,9 +7,9 @@
     <meta name="theme-color" content="#0b1020" />
     <meta
       name="description"
-      content="Yılmaz Sayın’ın kişisel blogu — yazılım, veri, sistemler ve üretkenlik notları."
+      content="Yılmaz Sayın | Junior Software Engineer Portfolyosu"
     />
-    <title>Yılmaz Sayın | Blog</title>
+    <title>Yılmaz Sayın | Software Engineer</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -26,29 +26,24 @@
         </a>
 
         <nav class="nav" aria-label="Site menüsü">
-          <a class="nav__link is-active" href="./index.html">Yazılar</a>
-          <a class="nav__link" href="#projects">Projeler</a>
+          <a class="nav__link is-active" href="#projects">Projeler</a>
           <a class="nav__link" href="#about">Hakkımda</a>
           <a class="nav__link" href="#contact">İletişim</a>
-          <a class="nav__button" href="./rss.xml" aria-disabled="true" title="Taslak">
-            RSS
-          </a>
         </nav>
       </div>
     </header>
 
     <main id="content">
       <section class="hero">
-        <div class="container hero__inner">
+        <div class="container hero__inner" style="grid-template-columns: 1fr; max-width: 850px;">
           <div class="hero__copy">
-            <p class="kicker">Kişisel Blog</p>
-            <h1>Net, ölçülebilir, uygulanabilir yazılım notları.</h1>
+            <p class="kicker">Junior Software Engineer</p>
+            <h1>Modern, ölçeklenebilir ve kullanıcı odaklı web uygulamaları.</h1>
             <p class="lede">
-              Web geliştirme, Python/SQL, sistem tasarımı, veri işleri ve kariyer notları.
-              Her yazı: problem → yaklaşım → çıktı.
+              Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. Frontend ve Backend ayrımıyla tam kapsamlı projeler geliştiriyor, veri tabanı mimarileri kuruyor ve temiz kod yazmaya odaklanıyorum.
             </p>
             <div class="hero__cta">
-              <a class="btn btn--primary" href="#posts">Yazılara göz at</a>
+              <a class="btn btn--primary" href="#projects">Projelerimi İncele</a>
               <a class="btn" href="https://github.com/yilmazsayin" target="_blank" rel="noreferrer">
                 GitHub
               </a>
@@ -57,42 +52,6 @@
               </a>
             </div>
           </div>
-
-          <aside class="hero__panel">
-            <div class="panel">
-              <div class="panel__title">Hızlı filtre</div>
-              <div class="panel__body">
-                <label class="field" for="q">
-                  <span>Arama</span>
-                  <input id="q" name="q" type="search" placeholder="Örn: Docker, SQL, React..." autocomplete="off" />
-                </label>
-
-                <div class="chips" aria-label="Etiketler">
-                  <button class="chip is-active" data-tag="all" type="button">Hepsi</button>
-                  <button class="chip" data-tag="web" type="button">Web</button>
-                  <button class="chip" data-tag="python" type="button">Python</button>
-                  <button class="chip" data-tag="sql" type="button">SQL</button>
-                  <button class="chip" data-tag="devops" type="button">DevOps</button>
-                  <button class="chip" data-tag="career" type="button">Kariyer</button>
-                </div>
-
-                <div class="panel__hint">
-                  İpucu: Taslak içerik. Senin yazılarınla gerçek postlar oluşturacağım.
-                </div>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section id="posts" class="section">
-        <div class="container">
-          <div class="section__head">
-            <h2>Son Yazılar</h2>
-            <p class="muted">Okuması hızlı; uygulaması pratik.</p>
-          </div>
-
-          <div class="post-grid" id="postGrid" aria-live="polite"></div>
         </div>
       </section>
 
@@ -100,7 +59,7 @@
         <div class="container">
           <div class="section__head">
             <h2>Projeler</h2>
-            <p class="muted">Seçili çalışmalar ve kısa özetler.</p>
+            <p class="muted">Geliştirdiğim tam kapsamlı web uygulamaları ve mimariler.</p>
           </div>
 
           <div class="project-grid">
@@ -118,7 +77,7 @@
                 <div class="project-card__kicker">Web Uygulaması · E-Ticaret/Kafe Yönetimi</div>
                 <h3 class="project-card__title">Coffely</h3>
                 <p class="project-card__desc">
-                  Sipariş ve yönetim süreçlerini kapsayan bir web uygulaması. Frontend/Backend ayrımıyla ölçeklenebilir bir yapı hedefler.
+                  Sipariş ve yönetim süreçlerini kapsayan bir web uygulaması. Frontend ve Backend yapılarını ayrı repolarda (CoffelyFE ve CoffelyBE) geliştirerek ölçeklenebilir bir mimari kurguladım. Kullanıcı doğrulama ve veri yönetimi süreçleri için MongoDB entegrasyonu sağladım.
                 </p>
                 <div class="project-card__meta">
                   <span class="badge">HTML/CSS/JS</span>
@@ -135,9 +94,6 @@
                   <a class="btn" href="https://github.com/yilmazsayin/CoffelyBE" target="_blank" rel="noreferrer">
                     Backend Repo
                   </a>
-                  <a class="btn" href="https://github.com/yilmazsayin/Coffely" target="_blank" rel="noreferrer">
-                    Proje Dokümanları
-                  </a>
                 </div>
 
                 <div class="project-gallery" aria-label="Coffely ekran görüntüleri">
@@ -152,18 +108,6 @@
                   </a>
                   <a class="project-gallery__item" href="./assets/coffely/4.png">
                     <img src="./assets/coffely/4.png" alt="Coffely ekran görüntüsü 4" loading="lazy" />
-                  </a>
-                  <a class="project-gallery__item" href="./assets/coffely/5.png">
-                    <img src="./assets/coffely/5.png" alt="Coffely ekran görüntüsü 5" loading="lazy" />
-                  </a>
-                  <a class="project-gallery__item" href="./assets/coffely/6.png">
-                    <img src="./assets/coffely/6.png" alt="Coffely ekran görüntüsü 6" loading="lazy" />
-                  </a>
-                  <a class="project-gallery__item" href="./assets/coffely/7.png">
-                    <img src="./assets/coffely/7.png" alt="Coffely ekran görüntüsü 7" loading="lazy" />
-                  </a>
-                  <a class="project-gallery__item" href="./assets/coffely/8.png">
-                    <img src="./assets/coffely/8.png" alt="Coffely ekran görüntüsü 8" loading="lazy" />
                   </a>
                 </div>
               </div>
@@ -181,15 +125,14 @@
               </div>
               <div class="project-card__body">
                 <div class="project-card__kicker">Eğitim Teknolojisi · Sesli Okuma</div>
-                <h3 class="project-card__title">Okuma Dünyası</h3>
+                <h3 class="project-card__title">Sesli Okuma ve Telaffuz Takip Uygulaması (Bitirme Projesi)</h3>
                 <p class="project-card__desc">
-                  İlkokul öğrencileri için sesli okuma ve telaffuz takibi odaklı etkileşimli bir web uygulaması.
-                  Metin akışı sırasında doğru/yanlış okunan kelimeleri görselleştirir ve okuma raporu sunar.
+                  İlkokul öğrencilerinin okuma pratiklerini geliştirmelerine yardımcı olan etkileşimli bir web platformu. Sisteme yüklenen Word (.docx) formatındaki metinlerin ses komutlarıyla okunmasını ve yanlış telaffuz edilen kelimelerin ekranda anlık olarak vurgulanmasını sağlar.
                 </p>
                 <div class="project-card__meta">
-                  <span class="badge">HTML</span>
+                  <span class="badge">HTML/CSS/JS</span>
                   <span class="badge">Python</span>
-                  <span class="badge">Speech/Audio</span>
+                  <span class="badge">Speech/Audio API</span>
                 </div>
                 <div class="project-card__actions">
                   <a class="btn btn--primary" href="https://okumadunyasi.vercel.app/" target="_blank" rel="noreferrer">
@@ -206,9 +149,6 @@
                 <div class="project-gallery" aria-label="Okuma Dünyası ekran görüntüleri">
                   <a class="project-gallery__item" href="./assets/okumadunyasi/1.png">
                     <img src="./assets/okumadunyasi/1.png" alt="Okuma Dünyası ekran görüntüsü 1" loading="lazy" />
-                  </a>
-                  <a class="project-gallery__item" href="./assets/okumadunyasi/2.png">
-                    <img src="./assets/okumadunyasi/2.png" alt="Okuma Dünyası ekran görüntüsü 2" loading="lazy" />
                   </a>
                   <a class="project-gallery__item" href="./assets/okumadunyasi/3.png">
                     <img src="./assets/okumadunyasi/3.png" alt="Okuma Dünyası ekran görüntüsü 3" loading="lazy" />
@@ -229,36 +169,10 @@
       <section id="about" class="section section--alt">
         <div class="container">
           <div class="section__head">
-            <h2>Hakkımda</h2>
+            <h2>Hakkımda & Yetenekler</h2>
             <p class="muted">
-              Bilgisayar mühendisi. Üretim odaklı: küçük iterasyonlar, net metrikler, sürdürülebilir kod.
+              Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisiyim. Google Geliştiriciler Topluluğu'nda (GDG) Web Koordinatörü olarak görev alıyorum.
             </p>
-          </div>
-
-          <div class="two-col">
-            <div class="card">
-              <h3>Odak Alanları</h3>
-              <ul class="list">
-                <li>Web uygulamaları (temel front-end + servis entegrasyonu)</li>
-                <li>Python ile veri işleme, otomasyon, analiz</li>
-                <li>SQL ile raporlama, performans ve veri modelleme</li>
-                <li>Docker/Git ile geliştirici ergonomisi</li>
-              </ul>
-            </div>
-
-            <div class="card">
-              <h3>Bu blogda ne var?</h3>
-              <ul class="list">
-                <li>“Nasıl yaptım?” yazıları (mini case-study)</li>
-                <li>Kısa notlar (komutlar, snippet’ler, checklist)</li>
-                <li>Projelerden öğrenimler ve karar kayıtları</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="section__head" style="margin-top: 18px;">
-            <h2 style="font-size: 1.2rem; margin: 0;">CV Özeti</h2>
-            <p class="muted">Deneyim, yetenekler ve ek bilgiler.</p>
           </div>
 
           <div class="two-col">
@@ -269,9 +183,9 @@
                   <strong>Programlama & Veri:</strong> Python, SQL, Pandas, NumPy, Matplotlib
                 </li>
                 <li>
-                  <strong>Ekosistem & Araçlar:</strong> Git, Docker, MySQL, Postman, Jupyter Notebook, MongoDB
+                  <strong>Ekosistem & Araçlar:</strong> Git, Docker, MySQL, Postman, MongoDB
                 </li>
-                <li><strong>Web:</strong> Temel Web (HTML/CSS/JS)</li>
+                <li><strong>Web Geliştirme:</strong> HTML / CSS / JavaScript</li>
               </ul>
             </div>
 
@@ -288,30 +202,20 @@
             <h3>Mesleki Deneyim</h3>
             <ul class="list">
               <li>
-                <strong>SDÜ SKS Daire Başkanlığı (Kısmi Zamanlı Öğrenci) — Yazı İşleri (2025 - Halen):</strong>
-                Veri yönetimi/raporlama; süreç optimizasyonu ve ofis içi iş akışlarının iyileştirilmesi.
+                <strong>SDÜ SKS Daire Başkanlığı — Yazı İşleri (2025 - Halen):</strong>
+                Veri yönetimi, raporlama ve ofis içi iş akışlarının iyileştirilmesi.
               </li>
               <li>
-                <strong>Türk Telekom (Donanım Stajı) (2025 · 1 ay):</strong>
-                Ağ donanımları, cihaz çalışma prensipleri, bakım yöntemleri; büyük ölçekli sistemlerde donanım entegrasyonu.
+                <strong>Türk Telekom (Donanım Stajı) (2025):</strong>
+                Büyük ölçekli sistemlerde bilgisayar donanım bileşenlerinin entegrasyonu ve ağ donanımları.
               </li>
               <li>
-                <strong>SDÜ Bilgi İşlem Daire Başkanlığı (Yazılım Departmanı) (2025 · 4 ay):</strong>
+                <strong>SDÜ Bilgi İşlem Daire Başkanlığı (Yazılım Departmanı) (2025):</strong>
                 Yazılım geliştirme proje çalışmaları; üniversite web sitesi tasarım/geliştirme katkıları.
               </li>
               <li>
                 <strong>Google Geliştiriciler Topluluğu (Web Koordinatörü) (2024 - 2025):</strong>
-                Web projelerinin teknik koordinasyonu; workshop/etkinlik organizasyonu ve teknik mentörlük.
-              </li>
-            </ul>
-          </div>
-
-          <div class="card" style="margin-top: 14px;">
-            <h3>Gönüllü Çalışmalar</h3>
-            <ul class="list">
-              <li>
-                Köy okullarındaki öğrencilere matematiği sevdirmek amacıyla yürütülen projede saha aktivitelerinin koordine edilmesi
-                ve eğitici oyunların yürütülmesi.
+                Topluluk web projelerinin teknik koordinasyonu; teknik mentörlük ve etkinlik organizasyonu.
               </li>
             </ul>
           </div>
@@ -322,7 +226,7 @@
         <div class="container">
           <div class="section__head">
             <h2>İletişim</h2>
-            <p class="muted">Bir proje, staj/iş fırsatı ya da teknik sohbet için.</p>
+            <p class="muted">Bir proje, staj/iş fırsatı ya da teknik sohbet için bana ulaşabilirsiniz.</p>
           </div>
 
           <div class="contact-card">
@@ -346,12 +250,11 @@
     <footer class="footer">
       <div class="container footer__inner">
         <div class="footer__left">
-          <div class="footer__brand">YS · Blog</div>
+          <div class="footer__brand">YS · Portfolio</div>
           <div class="muted">© <span id="year"></span> Yılmaz Sayın</div>
         </div>
         <div class="footer__right">
-          <a class="footer__link" href="./post.html">Örnek yazı sayfası</a>
-          <a class="footer__link" href="#content">Yukarı</a>
+          <a class="footer__link" href="#content">Yukarı Çık</a>
         </div>
       </div>
     </footer>

@@ -16,9 +16,9 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
+html {
+  scroll-behavior: smooth; /* Tıklayınca aniden atlamak yerine yumuşakça kaymasını sağlar */
+  scroll-padding-top: 90px; /* Menünün yüksekliği kadar pay bırakır, yazılar menünün altında kalmaz */
 }
 
 body {
