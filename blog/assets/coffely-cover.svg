@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#22c55e" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0.65"/>
+    </linearGradient>
+    <radialGradient id="r1" cx="30%" cy="25%" r="70%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r2" cx="75%" cy="70%" r="70%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0b1020"/>
+  <rect x="-60" y="-60" width="1320" height="750" fill="url(#g)" opacity="0.22" filter="url(#soft)"/>
+  <circle cx="260" cy="170" r="260" fill="url(#r1)"/>
+  <circle cx="940" cy="470" r="320" fill="url(#r2)"/>
+
+  <g fill="#ffffff" opacity="0.9">
+    <text x="70" y="120" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="28" font-weight="800" opacity="0.85">Project</text>
+    <text x="70" y="205" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="72" font-weight="900">Coffely</text>
+    <text x="70" y="255" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="28" font-weight="700" opacity="0.78">E-Ticaret &amp; Kafe Yönetim Sistemi</text>
+  </g>
+
+  <g transform="translate(70 320)" fill="#ffffff" opacity="0.78">
+    <rect x="0" y="0" width="168" height="42" rx="21" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.16)"/>
+    <text x="22" y="28" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="18" font-weight="800">HTML/CSS/JS</text>
+
+    <rect x="186" y="0" width="110" height="42" rx="21" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.16)"/>
+    <text x="212" y="28" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="18" font-weight="800">MongoDB</text>
+
+    <rect x="314" y="0" width="110" height="42" rx="21" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.16)"/>
+    <text x="344" y="28" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="18" font-weight="800">REST API</text>
+  </g>
+
+  <g transform="translate(1010 70)">
+    <rect x="0" y="0" width="120" height="120" rx="36" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.14)"/>
+    <text x="60" y="78" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="44" font-weight="900" fill="#ffffff" opacity="0.85">YS</text>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Örnek Yazı | Yılmaz Sayın Blog</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">İçeriğe atla</a>
+
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="./index.html" aria-label="Ana sayfa">
+          <span class="brand__mark">YS</span>
+          <span class="brand__text">
+            <strong>Yılmaz Sayın</strong>
+            <span>Software Engineering Notes</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Site menüsü">
+          <a class="nav__link" href="./index.html">Yazılar</a>
+          <a class="nav__link" href="./index.html#about">Hakkımda</a>
+          <a class="nav__link" href="./index.html#contact">İletişim</a>
+          <a class="nav__button" href="./rss.xml" aria-disabled="true" title="Taslak">
+            RSS
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="section">
+      <div class="container">
+        <article class="article">
+          <header class="article__head">
+            <p class="kicker">DevOps · 8 dk okuma</p>
+            <h1>Docker ile yerel geliştirme ortamını standardize etmek</h1>
+            <div class="article__meta">
+              <span class="muted">27 Mar 2026</span>
+              <span class="dot">•</span>
+              <span class="muted">Yılmaz Sayın</span>
+            </div>
+          </header>
+
+          <div class="article__body">
+            <p>
+              Bu yazı bir taslaktır. Amacım: bir projede “bende çalışıyor” problemini minimize edecek şekilde
+              <strong>tekrarlanabilir</strong> bir local environment kurmak.
+            </p>
+
+            <h2>Problem</h2>
+            <ul>
+              <li>Farklı makinelerde farklı versiyonlar (Node, Python, DB)</li>
+              <li>Kurulum adımlarının unutulması</li>
+              <li>Yeni katılan geliştiricinin ortamı günlerce toparlaması</li>
+            </ul>
+
+            <h2>Yaklaşım</h2>
+            <p>Minimum hedef: tek komutla servisleri ayağa kaldırmak.</p>
+
+            <pre><code>docker compose up --build</code></pre>
+
+            <h2>Checklist</h2>
+            <div class="callout">
+              <ul class="list">
+                <li>.env.example ekle</li>
+                <li>healthcheck tanımla</li>
+                <li>volume stratejisini yaz (dev vs prod)</li>
+                <li>README’de “ilk kurulum”u 5 adımda bitir</li>
+              </ul>
+            </div>
+
+            <h2>Kapanış</h2>
+            <p>
+              Bu iskeleti senin projelerinle doldurup “gerçek” bir yazıya çevirebiliriz: repo yapısı, compose,
+              ölçüm ve sonuçlar.
+            </p>
+          </div>
+
+          <footer class="article__foot">
+            <a class="btn btn--primary" href="./index.html">← Yazılara dön</a>
+            <a class="btn" href="./index.html#contact">İletişime geç</a>
+          </footer>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">YS · Blog</div>
+          <div class="muted">© <span id="year"></span> Yılmaz Sayın</div>
+        </div>
+        <div class="footer__right">
+          <a class="footer__link" href="./index.html">Ana sayfa</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
